@@ -363,6 +363,76 @@
                             </table>
                             <table width="100%" align="center" border="0" cellpadding="20">
                                 <tbody>
+
+                                    <tr onmouseover="AnimeDiff_start()" onmouseout="AnimeDiff_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                                <div class="two" id='AnimeDiff_image'>
+                                                    <img src="images/AnimeDiff.png" width="175">
+                                                </div>
+                                                <img src='images/AnimeDiff.gif' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function AnimeDiff_start() {
+                                                    document.getElementById('AnimeDiff_image').style.opacity = "0";
+                                                }
+                                                function AnimeDiff_stop() {
+                                                    document.getElementById('AnimeDiff_image').style.opacity = "1";
+                                                }
+                                                AnimeDiff_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Image2Video
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @WXblockchain
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
+
+                                    <tr onmouseout="Sadtalker_start()" onmouseover="Sadtalker_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align: middle">
+                                            <div class="one">
+                                                <div class="two" id='Sadtalker'>
+                                                    <video width=175 controls autoplay>
+                                                        <source src="videos/Sadtalker.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <img src='images/Sadtalker.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function Sadtalker_start() {
+                                                    document.getElementById('Sadtalker').style.opacity = "0";
+                                                }
+                                                function Sadtalker_stop() {
+                                                    document.getElementById('Sadtalker').style.opacity = "1";
+                                                }
+                                                Sadtalker_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Digital Avatar
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @WXblockchain
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
+
                                     <tr>
                                         <td style="padding:20px;width:25%;vertical-align:middle">
                                             <img src='images/3D_Segmentation.png' width="175">
@@ -422,6 +492,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseover="Stable_Diffusion_start()" onmouseout="Stable_Diffusion_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
                                             <div class="one">
@@ -454,6 +525,8 @@
                                             <br>
                                         </td>
                                     </tr>
+
+                                   
                                     <tr onmouseover="Stable_Diffusion2_start()" onmouseout="Stable_Diffusion2_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
                                             <div class="one">
@@ -476,7 +549,7 @@
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    Stable Diffusion ControlNet Redraw
+                                                    Lineart Img2Img
                                                 </papertitle>
                                             </a>
                                             <br>
