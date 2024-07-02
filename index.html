@@ -85,8 +85,7 @@
                             </tr>
                         </tbody>
                     </table>
-
-                    <!-------------------------------------------------- Watermark Cambria50 Alpha30 -------------------------------------------------->
+                    <!----------------------------------------- Watermark Cambria50 Alpha30 ----------------------------------------->
                     <table
                         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
@@ -104,7 +103,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!-------------------------------------------------- Papers 5 -------------------------------------------------->
+                    <!--------------------------------------------------- Papers --------------------------------------------------->
                     <table
                         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
@@ -350,7 +349,6 @@
                                     </p>
                                 </td>
                             </tr>
-
                             <tr>
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <img src='images/3D_Segmentation.png' width="175">
@@ -359,8 +357,7 @@
                                     <a
                                         href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269887#ack">
                                         <papertitle>
-                                            An Intensity-Based Post-Processing Tool For 3D Instance Segmentation
-                                            Of
+                                            An Intensity-Based Post-Processing Tool For 3D Instance Segmentation Of
                                             Organelles In Soft X-Ray Tomograms
                                         </papertitle>
                                     </a>
@@ -378,7 +375,6 @@
                                 </td>
                             </tr>
 
-
                             <!-------------------------------------------------- Projects -------------------------------------------------->
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                                 <tbody>
@@ -391,9 +387,9 @@
                                     </tr>
                                 </tbody>
                             </table>
+
                             <table width="100%" align="center" border="0" cellpadding="20">
                                 <tbody>
-
 
                                     <tr onmouseout="LLM_start()" onmouseover="LLM_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
@@ -431,9 +427,6 @@
                                         </td>
                                     </tr>
 
-
-
-
                                     <tr onmouseout="AIGC_start()" onmouseover="AIGC_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
@@ -470,7 +463,6 @@
                                         </td>
                                     </tr>
 
-                                    
                                     <tr onmouseover="Card_Background_start()" onmouseout="Card_Background_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
                                             <div class="one">
@@ -493,7 +485,7 @@
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    Card Background
+                                                    Card Background Design #UI
                                                 </papertitle>
                                             </a>
                                             <br>
@@ -503,7 +495,6 @@
                                             <br>
                                         </td>
                                     </tr>
-
 
                                     <tr onmouseover="Goods_Beautify_start()" onmouseout="Goods_Beautify_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -538,6 +529,44 @@
                                         </td>
                                     </tr>
 
+                                    <tr onmouseover="ControlNet_start()" onmouseout="ControlNet_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one"
+                                                style="position: relative; display: flex; align-items: center; justify-content: center;">
+                                                <div class="two" id="ControlNet_image" style="position: absolute;">
+                                                    <img src="images/ControlNetA.png" width="175">
+                                                </div>
+                                                <div class="two" id="ControlNet_image_hover"
+                                                    style="position: absolute; opacity: 0;">
+                                                    <img src="images/ControlNetB.png" width="175">
+                                                </div>
+                                            </div>
+                                            <script type="text/javascript">
+                                                function ControlNet_start() {
+                                                    document.getElementById('ControlNet_image').style.opacity = "0";
+                                                    document.getElementById('ControlNet_image_hover').style.opacity = "1";
+                                                }
+                                                function ControlNet_stop() {
+                                                    document.getElementById('ControlNet_image').style.opacity = "1";
+                                                    document.getElementById('ControlNet_image_hover').style.opacity = "0";
+                                                }
+                                                ControlNet_stop();
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    ControlNet
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @PhantomDream
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
 
                                     <tr onmouseover="AnimeDiff_start()" onmouseout="AnimeDiff_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -608,29 +637,32 @@
                                         </td>
                                     </tr>
 
-                                    <tr onmouseover="Line_Art_Coloring_start()" onmouseout="Line_Art_Coloring_stop()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <tr onmouseout="NerF_start()" onmouseover="NerF_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
-                                                <div class="two" id='Line_Art_Coloring_image'>
-                                                    <img src="images/Line_Art_ColoringA.png" width="175">
+                                                <div class="two" id='NerF'>
+                                                    <video width=175 muted autoplay loop>
+                                                        <source src="videos/NerF.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
                                                 </div>
-                                                <img src='images/Line_Art_ColoringB.png' width="175">
+                                                <img src='images/NerF.png' width="175">
                                             </div>
                                             <script type="text/javascript">
-                                                function Line_Art_Coloring_start() {
-                                                    document.getElementById('Line_Art_Coloring_image').style.opacity = "0";
+                                                function NerF_start() {
+                                                    document.getElementById('NerF').style.opacity = "0";
                                                 }
-                                                function Line_Art_Coloring_stop() {
-                                                    document.getElementById('Line_Art_Coloring_image').style.opacity = "1";
+                                                function NerF_stop() {
+                                                    document.getElementById('NerF').style.opacity = "1";
                                                 }
-                                                Line_Art_Coloring_stop()
+                                                NerF_stop()
                                             </script>
                                         </td>
                                         <td
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    Line Art Coloring
+                                                    NerF 3D Reconstruction of a small toy
                                                 </papertitle>
                                             </a>
                                             <br>
@@ -641,71 +673,6 @@
                                         </td>
                                     </tr>
 
-                                    <tr onmouseover="DCGAN_start()" onmouseout="DCGAN_stop()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
-                                            <div class="one">
-                                                <div class="two" id='DCGAN_image'>
-                                                    <img src="images/DCGANA.png" width="175">
-                                                </div>
-                                                <img src='images/DCGANB.png' width="175">
-                                            </div>
-                                            <script type="text/javascript">
-                                                function DCGAN_start() {
-                                                    document.getElementById('DCGAN_image').style.opacity = "0";
-                                                }
-                                                function DCGAN_stop() {
-                                                    document.getElementById('DCGAN_image').style.opacity = "1";
-                                                }
-                                                DCGAN_stop()
-                                            </script>
-                                        </td>
-                                        <td
-                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
-                                            <a>
-                                                <papertitle>
-                                                    DCGAN
-                                                </papertitle>
-                                            </a>
-                                            <br>
-                                            <strong>
-                                                @PhantomDream
-                                            </strong>
-                                            <br>
-                                        </td>
-                                    </tr>
-
-                                    <tr onmouseover="Style_Transfer_start()" onmouseout="Style_Transfer_stop()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
-                                            <div class="one">
-                                                <div class="two" id='Style_Transfer_image'>
-                                                    <img src="images/Style_TransferA.png" width="175">
-                                                </div>
-                                                <img src='images/Style_TransferB.png' width="175">
-                                            </div>
-                                            <script type="text/javascript">
-                                                function Style_Transfer_start() {
-                                                    document.getElementById('Style_Transfer_image').style.opacity = "0";
-                                                }
-                                                function Style_Transfer_stop() {
-                                                    document.getElementById('Style_Transfer_image').style.opacity = "1";
-                                                }
-                                                Style_Transfer_stop()
-                                            </script>
-                                        </td>
-                                        <td
-                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
-                                            <a>
-                                                <papertitle>
-                                                    Style Transfer
-                                                </papertitle>
-                                            </a>
-                                            <br>
-                                            <strong>
-                                                @PhantomDream
-                                            </strong>
-                                            <br>
-                                        </td>
-                                    </tr>
 
 
                                     <tr onmouseover="Hackathon_start()" onmouseout="Hackathon_stop()">
@@ -730,12 +697,12 @@
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    Hackathon Project
+                                                    Generate UE model from 2D Floor Plan
                                                 </papertitle>
                                             </a>
                                             <br>
                                             <strong>
-                                                Hackathon
+                                                @WXblockchain
                                             </strong>
                                             <br>
                                         </td>
@@ -774,7 +741,6 @@
                                         </td>
                                     </tr>
 
-
                                     <tr onmouseover="Stable_Diffusion2_start()" onmouseout="Stable_Diffusion2_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
                                             <div class="one">
@@ -807,6 +773,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseover="Object_Detection_Case1_start()"
                                         onmouseout="Object_Detection_Case1_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -840,6 +807,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseover="Object_Detection_Case2_start()"
                                         onmouseout="Object_Detection_Case2_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -873,6 +841,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseover="AnimeGAN_start()" onmouseout="AnimeGAN_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
                                             <div class="one">
@@ -931,7 +900,7 @@
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    Digital Twin in Unreal
+                                                    Digital Twin Scene Construction in Unreal Engine
                                                 </papertitle>
                                             </a>
                                             <br>
@@ -941,6 +910,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseover="Semantic_Segmentation_start()"
                                         onmouseout="Semantic_Segmentation_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -974,6 +944,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseover="Instance_Segmentation_start()"
                                         onmouseout="Instance_Segmentation_stop()">
                                         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -1007,6 +978,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseout="Tracking_start()" onmouseover="Tracking_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
@@ -1042,7 +1014,8 @@
                                             <br>
                                         </td>
                                     </tr>
-                                    <!-- <tr onmouseout="Qingyan_start()" onmouseover="Qingyan_stop()">
+
+                                    <tr onmouseout="Qingyan_start()" onmouseover="Qingyan_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
                                                 <div class="two" id='Qingyan'>
@@ -1077,107 +1050,7 @@
                                             <br>
                                         </td>
                                     </tr>
-                                    <tr onmouseout="Video_Swin_Transformer_start()"
-                                        onmouseover="Video_Swin_Transformer_stop()">
-                                        <td style="padding:20px;width:25%;vertical-align: middle">
-                                            <div class="one">
-                                                <div class="two" id='Video_Swin_Transformer'>
-                                                    <video width=175 muted autoplay loop>
-                                                        <source src="videos/Video_Swin_Transformer.mp4"
-                                                            type="video/mp4">
-                                                        Your browser does not support the video tag.
-                                                    </video>
-                                                </div>
-                                                <img src='images/Video_Swin_Transformer.png' width="175">
-                                            </div>
-                                            <script type="text/javascript">
-                                                function Video_Swin_Transformer_start() {
-                                                    document.getElementById('Video_Swin_Transformer').style.opacity = "0";
-                                                }
-                                                function Video_Swin_Transformer_stop() {
-                                                    document.getElementById('Video_Swin_Transformer').style.opacity = "1";
-                                                }
-                                                Video_Swin_Transformer_stop()
-                                            </script>
-                                        </td>
-                                        <td
-                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
-                                            <a>
-                                                <papertitle>
-                                                    Action Recognition
-                                                </papertitle>
-                                            </a>
-                                            <br>
-                                            <strong>
-                                                @Byteance
-                                            </strong>
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr onmouseover="ESRGAN_start()" onmouseout="ESRGAN_stop()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
-                                            <div class="one">
-                                                <div class="two" id='ESRGAN_image'>
-                                                    <img src="images/ESRGANA.png" width="175">
-                                                </div>
-                                                <img src='images/ESRGANB.png' width="175">
-                                            </div>
-                                            <script type="text/javascript">
-                                                function ESRGAN_start() {
-                                                    document.getElementById('ESRGAN_image').style.opacity = "0";
-                                                }
-                                                function ESRGAN_stop() {
-                                                    document.getElementById('ESRGAN_image').style.opacity = "1";
-                                                }
-                                                ESRGAN_stop()
-                                            </script>
-                                        </td>
-                                        <td
-                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
-                                            <a>
-                                                <papertitle>
-                                                    Image Super Resolution Using ESRGAN 4x
-                                                </papertitle>
-                                            </a>
-                                            <br>
-                                            <strong>
-                                                @Byteance
-                                            </strong>
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr onmouseover="GFPGAN_start()" onmouseout="GFPGAN_stop()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
-                                            <div class="one">
-                                                <div class="two" id='GFPGAN_image'>
-                                                    <img src="images/GFPGANA.png" width="175">
-                                                </div>
-                                                <img src='images/GFPGANB.png' width="175">
-                                            </div>
-                                            <script type="text/javascript">
-                                                function GFPGAN_start() {
-                                                    document.getElementById('GFPGAN_image').style.opacity = "0";
-                                                }
-                                                function GFPGAN_stop() {
-                                                    document.getElementById('GFPGAN_image').style.opacity = "1";
-                                                }
-                                                GFPGAN_stop()
-                                            </script>
-                                        </td>
-                                        <td
-                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
-                                            <a>
-                                                <papertitle>
-                                                    Face Super Resolution Using GFPGAN 4x
-                                                </papertitle>
-                                            </a>
-                                            <br>
-                                            <strong>
-                                                @Byteance
-                                            </strong>
-                                            <br>
-                                        </td>
-                                    </tr> -->
+
                                     <tr onmouseover="RealCUGAN_start()" onmouseout="RealCUGAN_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
@@ -1210,6 +1083,7 @@
                                             <br>
                                         </td>
                                     </tr>
+
                                     <tr onmouseout="Interpolation_start()" onmouseover="Interpolation_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
@@ -1245,42 +1119,42 @@
                                             <br>
                                         </td>
                                     </tr>
-                                    <!-- <tr onmouseout="LOL_start()" onmouseover="LOL_stop()">
+
+                                    <tr onmouseout="LOL_start()" onmouseover="LOL_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
-                                        <div class="one">
-                                        <div class="two" id='LOL'>
-                                        <video width=175 muted autoplay loop>
-                                        <source src="videos/LOL.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                        </video>
-                                        </div>
-                                        <img src='images/LOL.png' width="175">
-                                        </div>
-                                        <script type="text/javascript">
-                                        function LOL_start() {
-                                        document.getElementById('LOL').style.opacity = "0";
-                                        }
-                                        function LOL_stop() {
-                                        document.getElementById('LOL').style.opacity = "1";
-                                        }
-                                        LOL_stop()
-                                        </script>
+                                            <div class="one">
+                                                <div class="two" id='LOL'>
+                                                    <video width=175 muted autoplay loop>
+                                                        <source src="videos/LOL.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <img src='images/LOL.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function LOL_start() {
+                                                    document.getElementById('LOL').style.opacity = "0";
+                                                }
+                                                function LOL_stop() {
+                                                    document.getElementById('LOL').style.opacity = "1";
+                                                }
+                                                LOL_stop()
+                                            </script>
                                         </td>
                                         <td
-                                        style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
-                                        <a>
-                                        <papertitle>
-                                        LOL
-                                        </papertitle>
-                                        </a>
-                                        <br>
-                                        <strong>
-                                        @Bilibili
-                                        </strong>
-                                        <br>
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Capture the highlights from League of Legends matches
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @Bilibili
+                                            </strong>
+                                            <br>
                                         </td>
-                                        </tr> -->
-
+                                    </tr>
 
                                     <tr onmouseout="Charging_start()" onmouseover="Charging_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
@@ -1307,54 +1181,118 @@
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    Charging Station in Unity
+                                                    Charging Station Animation in Unity
                                                 </papertitle>
                                             </a>
                                             <br>
                                             <strong>
-                                                @State Grid
+                                                @Tiamaes
                                             </strong>
                                             <br>
                                         </td>
                                     </tr>
 
-
-                                    <tr onmouseout="NerF_start()" onmouseover="NerF_stop()">
+                                    <tr onmouseout="Tank_start()" onmouseover="Tank_stop()">
                                         <td style="padding:20px;width:25%;vertical-align: middle">
                                             <div class="one">
-                                                <div class="two" id='NerF'>
+                                                <div class="two" id='Tank'>
                                                     <video width=175 muted autoplay loop>
-                                                        <source src="videos/NerF.mp4" type="video/mp4">
+                                                        <source src="videos/Tank.mp4" type="video/mp4">
                                                         Your browser does not support the video tag.
                                                     </video>
                                                 </div>
-                                                <img src='images/NerF.png' width="175">
+                                                <img src='images/Tank.png' width="175">
                                             </div>
                                             <script type="text/javascript">
-                                                function NerF_start() {
-                                                    document.getElementById('NerF').style.opacity = "0";
+                                                function Tank_start() {
+                                                    document.getElementById('Tank').style.opacity = "0";
                                                 }
-                                                function NerF_stop() {
-                                                    document.getElementById('NerF').style.opacity = "1";
+                                                function Tank_stop() {
+                                                    document.getElementById('Tank').style.opacity = "1";
                                                 }
-                                                NerF_stop()
+                                                Tank_stop()
                                             </script>
                                         </td>
                                         <td
                                             style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
                                             <a>
                                                 <papertitle>
-                                                    NerF
+                                                    Old Game Tank in Unity
                                                 </papertitle>
                                             </a>
                                             <br>
                                             <strong>
-                                                # Personal Project
+                                                @Tiamaes
                                             </strong>
                                             <br>
                                         </td>
                                     </tr>
 
+                                    <tr onmouseover="Graph_start()" onmouseout="Graph_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align: middle">
+                                            <div class="one">
+                                                <div class="two" id='Graph_image'>
+                                                    <img src="images/GraphA.png" width="175">
+                                                </div>
+                                                <img src='images/GraphB.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function Graph_start() {
+                                                    document.getElementById('Graph_image').style.opacity = "0";
+                                                }
+                                                function Graph_stop() {
+                                                    document.getElementById('Graph_image').style.opacity = "1";
+                                                }
+                                                Graph_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Traffic Network #Girvan-Newman
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @Tiamaes
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
+
+                                    <tr onmouseover="Route_start()" onmouseout="Route_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align: middle">
+                                            <div class="one">
+                                                <div class="two" id='Route_image'>
+                                                    <img src="images/RouteA.png" width="175">
+                                                </div>
+                                                <img src='images/RouteB.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function Route_start() {
+                                                    document.getElementById('Route_image').style.opacity = "0";
+                                                }
+                                                function Route_stop() {
+                                                    document.getElementById('Route_image').style.opacity = "1";
+                                                }
+                                                Route_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Multi-Stop Route Planning #GA #PSO #SA #Convex Hull #Data Mining
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @Tiamaes
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
 
                                     <tr onmouseout="Gesture_Classification_start()"
                                         onmouseover="Gesture_Classification_stop()">
@@ -1388,7 +1326,7 @@
                                             </a>
                                             <br>
                                             <strong>
-                                                # Personal Project
+                                                @Montreal Intern
                                             </strong>
                                             <br>
                                         </td>
@@ -1424,13 +1362,114 @@
                                             </a>
                                             <br>
                                             <strong>
-                                                # Personal Project
+                                                @Montreal Intern
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
+
+                                    <tr onmouseover="DCGAN_start()" onmouseout="DCGAN_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                                <div class="two" id='DCGAN_image'>
+                                                    <img src="images/DCGANA.png" width="175">
+                                                </div>
+                                                <img src='images/DCGANB.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function DCGAN_start() {
+                                                    document.getElementById('DCGAN_image').style.opacity = "0";
+                                                }
+                                                function DCGAN_stop() {
+                                                    document.getElementById('DCGAN_image').style.opacity = "1";
+                                                }
+                                                DCGAN_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    DCGAN
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @Montreal Intern
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
+
+                                    <tr onmouseover="Line_Art_Coloring_start()" onmouseout="Line_Art_Coloring_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                                <div class="two" id='Line_Art_Coloring_image'>
+                                                    <img src="images/Line_Art_ColoringA.png" width="175">
+                                                </div>
+                                                <img src='images/Line_Art_ColoringB.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function Line_Art_Coloring_start() {
+                                                    document.getElementById('Line_Art_Coloring_image').style.opacity = "0";
+                                                }
+                                                function Line_Art_Coloring_stop() {
+                                                    document.getElementById('Line_Art_Coloring_image').style.opacity = "1";
+                                                }
+                                                Line_Art_Coloring_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Line Art Coloring
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @Montreal Intern
+                                            </strong>
+                                            <br>
+                                        </td>
+                                    </tr>
+
+                                    <tr onmouseover="Style_Transfer_start()" onmouseout="Style_Transfer_stop()">
+                                        <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                                <div class="two" id='Style_Transfer_image'>
+                                                    <img src="images/Style_TransferA.png" width="175">
+                                                </div>
+                                                <img src='images/Style_TransferB.png' width="175">
+                                            </div>
+                                            <script type="text/javascript">
+                                                function Style_Transfer_start() {
+                                                    document.getElementById('Style_Transfer_image').style.opacity = "0";
+                                                }
+                                                function Style_Transfer_stop() {
+                                                    document.getElementById('Style_Transfer_image').style.opacity = "1";
+                                                }
+                                                Style_Transfer_stop()
+                                            </script>
+                                        </td>
+                                        <td
+                                            style="padding: 20px; width: 75%; vertical-align: middle; text-align: justify;">
+                                            <a>
+                                                <papertitle>
+                                                    Style Transfer
+                                                </papertitle>
+                                            </a>
+                                            <br>
+                                            <strong>
+                                                @Montreal Intern
                                             </strong>
                                             <br>
                                         </td>
                                     </tr>
                             </table>
-                            <!-------------------------------------------------- Patents 13 -------------------------------------------------->
+
+                            <!-------------------------------------------------- Patents  -------------------------------------------------->
+
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                                 <tbody>
                                     <tr>
